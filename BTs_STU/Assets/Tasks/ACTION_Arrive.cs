@@ -25,7 +25,7 @@ public class ACTION_Arrive : GOAction  // inherit from GOAction
     public override void OnStart()
     {
         base.OnStart();
-
+        Debug.Log(target + "isset");
         arrive = gameObject.GetComponent<Arrive>();
         arrive.target = target;
         arrive.closeEnoughRadius = closeEnough;  // onUpdate will also take care of this
